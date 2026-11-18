@@ -1,7 +1,7 @@
 name: ReactNewApp CI
 
-on:  
-push:
+on:
+  push:
     branches: [main]
   pull_request:
     branches: [main]
@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
